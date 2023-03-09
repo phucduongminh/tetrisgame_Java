@@ -1,23 +1,9 @@
 package main;
 
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
-
-//import javax.sound.sampled.Clip;
-import javax.swing.JPanel;
-import javax.swing.Timer;
 
 
 
@@ -91,11 +77,11 @@ public class Board extends JPanel implements KeyListener, MouseListener, MouseMo
 	
 	public Board(){
 		// load Assets
-		blocks = ImageLoader.loadImage("C:/Users/84373/Music/tetrismaster_test/textures/tiles.jpg");
+		blocks = ImageLoader.loadImage("./textures/tiles.jpg");
 		
-		background = ImageLoader.loadImage("C:/Users/84373/Music/tetrismaster_test/textures/background.png");
-		pause = ImageLoader.loadImage("C:/Users/84373/Music/tetrismaster_test/textures/pause.png");
-		refresh = ImageLoader.loadImage("C:/Users/84373/Music/tetrismaster_test/textures/refresh.png");
+		background = ImageLoader.loadImage("./textures/background.png");
+		pause = ImageLoader.loadImage("./textures/pause.png");
+		refresh = ImageLoader.loadImage("./textures/refresh.png");
 		
 		/*music = ImageLoader.LoadSound("/music.wav");*/
 		

@@ -1,16 +1,9 @@
 package main;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Rectangle;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
-import javax.swing.JPanel;
-import javax.swing.Timer;
 
 public class Title extends JPanel implements MouseListener, MouseMotionListener{
 	
@@ -29,10 +22,9 @@ public class Title extends JPanel implements MouseListener, MouseMotionListener{
 	
 	public Title(Window window){
 		//try {
-			title = ImageLoader.loadImage("C:/Users/84373/Music/tetrismaster_test/textures/Title.png");
-			//C:/Users/84373/Music/tetrismaster_test/textures/arrow.png
-			instructions = ImageLoader.loadImage("C:/Users/84373/Music/tetrismaster_test/textures/arrow.jpg");
-			play = ImageLoader.loadImage("C:/Users/84373/Music/tetrismaster_test/textures/play.png");
+			title = ImageLoader.loadImage("./textures/Title.png");
+			instructions = ImageLoader.loadImage("./textures/arrow.jpg");
+			play = ImageLoader.loadImage("./textures/play.png");
 		/* } catch (IOException e) {
 			e.printStackTrace();
 		}*/

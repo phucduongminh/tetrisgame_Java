@@ -1,1 +1,1 @@
-run Window.java to start game
+Run Java Class "Window.java" to start game
