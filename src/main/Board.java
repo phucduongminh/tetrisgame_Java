@@ -1,9 +1,13 @@
 package main;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
+import java.io.BufferedInputStream;
+import java.io.InputStream;
 
 
 
@@ -16,8 +20,6 @@ public class Board extends JPanel implements KeyListener, MouseListener, MouseMo
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
-	//private Clip music;
 	
 	private BufferedImage blocks, background, pause, refresh;
 	
@@ -82,13 +84,6 @@ public class Board extends JPanel implements KeyListener, MouseListener, MouseMo
 		background = ImageLoader.loadImage("./textures/background.png");
 		pause = ImageLoader.loadImage("./textures/pause.png");
 		refresh = ImageLoader.loadImage("./textures/refresh.png");
-		
-		/*music = ImageLoader.LoadSound("/music.wav");*/
-		
-		
-		
-		/*music.loop(Clip.LOOP_CONTINUOUSLY);*/
-		
 		
 		
 		mouseX = 0;

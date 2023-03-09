@@ -60,7 +60,7 @@ public class Shape {
 				}
 			}
 			checkLine();
-			board.addScore();
+			//board.addScore();
 			board.setCurrentShape();
 		}
 		
@@ -152,13 +152,15 @@ public class Shape {
 			int count = 0;
 			for(int j = 0; j < board.getBoard()[0].length; j++)
 			{
-				if(board.getBoard()[i][j] != 0)
+				if(board.getBoard()[i][j] != 0){
 					count++;
-				
+					board.addScore();
+				}
 				board.getBoard()[size][j] = board.getBoard()[i][j];
 			}
-			if(count < board.getBoard()[0].length)
+			if(count < board.getBoard()[0].length){
 				size --;
+			}
 		}
 	}
 	

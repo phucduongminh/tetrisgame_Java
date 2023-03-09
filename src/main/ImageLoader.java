@@ -10,7 +10,6 @@ public class ImageLoader {
 	
 	public static BufferedImage loadImage(String path){
 		try {
-			//return ImageIO.read(ImageLoader.class.getResource(path));
 			return ImageIO.read(new FileInputStream(path));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -19,14 +18,4 @@ public class ImageLoader {
 		return null;
 		
 	}
-	/*public static Clip LoadSound(String direction){
-		try{
-			Clip clip = AudioSystem.getClip();
-			clip.open(AudioSystem.getAudioInputStream(ImageLoader.class.getResource(direction)));
-			return clip;
-		}catch(Exception e){
-			e.printStackTrace();
-		}
-		return null;
-	}*/
 }
